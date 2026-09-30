@@ -32,7 +32,7 @@ Each file or directory has specific permissions for three categories of users: *
 -Nobody else has any access
 -Common for SSH keys and sensitive data
 
-777 (rwxrwxrwx) - Full access for everyone
+777 (rwxrwxrwx) - Full access for everyone:
 -Everyone can do anything
 -Generally considered insecure
 -Avoid unless absolutely necessary
