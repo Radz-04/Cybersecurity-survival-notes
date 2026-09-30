@@ -30,7 +30,7 @@ Direct edits to /etc/resolv.conf are non-persistent after a reboot because the f
 | **X11 / XServer** | `TCP 6000-6010` | Native Linux/Unix graphical display system |
 | **XDMCP** | `UDP 177` | Remote GUI management, unencrypted |
 
-## Linux Security and Hardening
+## Linux Security and SSH Hardening
 
 System and packets updates:
 
