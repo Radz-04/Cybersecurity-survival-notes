@@ -116,16 +116,16 @@ umask 0022
 ```
 Common umask values:
 
-- 0022 - Default on many systems:
+ 0022 - Default on many systems:
 
  - Files created with 644 (rw-r--r--): 666 - 022 = 644
  - Directories created with 755 (rwxr-xr-x): 777 - 022 = 755
 
-- 0002 - Common for shared environments:
+ 0002 - Common for shared environments:
  - Files created with 664 (rw-rw-r--): 666 - 002 = 664
  - Directories created with 775 (rwxrwxr-x): 777 - 002 = 775
 
-- 0077 - Restrictive (private files)_
+ 0077 - Restrictive (private files)_
  - Files created with 600 (rw-------): 666 - 077 = 600
  - Directories created with 700 (rwx------): 777 - 077 = 700
 To make the umask permanent, add it to your shell's configuration file (~/.bashrc or ~/.zshrc).
