@@ -8,7 +8,7 @@
 * **OS Shell:** Command-line interpreter between user and kernel (e.g., Bash, Zsh, Fish).
 
 ## File System Hierarchy
-
+```
 / (Root)
 ├── bin    -> Essential command binaries
 ├── boot   -> Static files of the boot loader
@@ -26,6 +26,7 @@
 ├── tmp    -> Temporary files
 ├── usr    -> Secondary hierarchy
 └── var    -> Variable data
+```
 
 
 
