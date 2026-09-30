@@ -3,7 +3,6 @@
 * **OS Kernel:** Core component managing system hardware and I/O resources.
 * **Daemons:** Background services handling tasks like scheduling, networking, and printing.
 * **OS Shell:** Command-line interpreter between user and kernel (Bash, Zsh, Fish...).
-
 ## File System Hierarchy
 
 / (Root)
