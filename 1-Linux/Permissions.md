@@ -96,6 +96,40 @@ chmod +t /tmp
 # Or using octal
 chmod 1777 /tmp
 ```
+## Default Permissions and umask
+When you create a new file or directory, Linux applies default permissions based on the umask value.
+
+The umask is a mask that subtracts permissions from the base defaults:
+- Base default for files: 666 (rw-rw-rw-)
+- Base default for directories: 777 (rwxrwxrwx)
+- The umask value is subtracted from these base permissions.
+
+```bash
+# View current umask
+umask
+
+# View in symbolic notation
+umask -S
+
+# Set umask
+umask 0022
+```
+Common umask values:
+
+- 0022 - Default on many systems:
+
+ -Files created with 644 (rw-r--r--): 666 - 022 = 644
+ - Directories created with 755 (rwxr-xr-x): 777 - 022 = 755
+
+- 0002 - Common for shared environments:
+ - Files created with 664 (rw-rw-r--): 666 - 002 = 664
+ - Directories created with 775 (rwxrwxr-x): 777 - 002 = 775
+
+- 0077 - Restrictive (private files)_
+ - Files created with 600 (rw-------): 666 - 077 = 600
+ - Directories created with 700 (rwx------): 777 - 077 = 700
+To make the umask permanent, add it to your shell's configuration file (~/.bashrc or ~/.zshrc).
+
 
 
 
