@@ -118,7 +118,7 @@ Common umask values:
 
 - 0022 - Default on many systems:
 
- -Files created with 644 (rw-r--r--): 666 - 022 = 644
+ - Files created with 644 (rw-r--r--): 666 - 022 = 644
  - Directories created with 755 (rwxr-xr-x): 777 - 022 = 755
 
 - 0002 - Common for shared environments:
