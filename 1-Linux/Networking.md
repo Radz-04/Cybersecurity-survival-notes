@@ -47,7 +47,7 @@ SSH configuration(/etc/ssh/sshd_config):
 Brute-Force Protection (`fail2ban`):
 - Monitors failed login attempts and temporarily bans IP addresses that exceed the maximum threshold.
 
-TCP Wrappers (`tcpd`):
+TCP Wrappers [Deprecated]:
 - Software security system for Linux and Unix acting as a filter to control access to network services.
 
 * **`/etc/hosts.allow` (Authorized network services):**
@@ -61,4 +61,17 @@ TCP Wrappers (`tcpd`):
  ```bash
   ALL  : .example.com     # Block ALL network services from this domain
   sshd : 10.129.22.22     # Block SSH service for this specific IP
+  ```
+## UFW (Modern Method - Recommended)
+* **Status & Controls:**
+  ```bash
+  sudo ufw status verbose
+  sudo ufw enable
+  sudo ufw reload
+  ```
+* **Traffic Rules:**
+  ```bash
+  sudo ufw allow 22/tcp                                # Allow SSH (TCP port 22)
+  sudo ufw allow from 10.129.0.0/16 to any port 22    # Restrict SSH access to a specific subnet
+  sudo ufw deny from 192.168.1.50                      # Block all incoming traffic from a specific IP
   ```
