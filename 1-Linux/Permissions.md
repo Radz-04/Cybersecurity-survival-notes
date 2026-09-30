@@ -63,4 +63,41 @@ sudo chown alice:devs <file>     # Change Owner to 'alice' and Group to 'devs'
 sudo chown -R alice:devs /var/www/ # Recursive ownership change
 ```
 
+## Special Permissions (SUID(s), SGID(s), Sticky Bit(t))
+SetUID (SUID):
+- When set on an executable file, the program runs with the permissions of the file's owner, not the user who executed it.
+
+```bash
+# Set SUID 
+chmod u+s /usr/bin/passwd
+
+# Or using octal 
+chmod 4755 /usr/bin/passwd
+```
+
+SetGID (SGID):
+- For files: The file runs with the permissions of the file's group.
+- For directories: Files created within the directory inherit the directory's group, not the creator's primary group.
+  
+```bash
+# Set SGID
+chmod g+s <directory>  # or chmod g+s <file>
+
+# Or using octal
+chmod 2775 <directory> # or chmod 2755 <file>
+```
+
+Sticky Bit:
+- When set on a directory, only the file's owner, the directory's owner, or root can delete or rename files within that directory.
+
+```bash
+# Set sticky bit
+chmod +t /tmp
+# Or using octal
+chmod 1777 /tmp
+```
+
+
+
+
 
