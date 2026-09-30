@@ -1,8 +1,12 @@
+## Linux Architecture & File System Hierarchy
+
 ## OS Architecture
-* **Bootloader:** Code fragment executed at startup to boot the OS (GRUB in Parrot Linux).
+
+* **Bootloader:** Code fragment executed at startup to boot the OS (e.g., GRUB in Parrot Linux).
 * **OS Kernel:** Core component managing system hardware and I/O resources.
 * **Daemons:** Background services handling tasks like scheduling, networking, and printing.
-* **OS Shell:** Command-line interpreter between user and kernel (Bash, Zsh, Fish...).
+* **OS Shell:** Command-line interpreter between user and kernel (e.g., Bash, Zsh, Fish).
+
 ## File System Hierarchy
 
 / (Root)
