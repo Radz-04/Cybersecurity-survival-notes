@@ -1,6 +1,6 @@
 # Cybersecurity-survival-notes
 
-Personal cybersecurity notes, commands, and cheatsheets.
+Cybersecurity technical reference notes, commands, and cheatsheets.
 
 ##  Repository Index
 
