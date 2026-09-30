@@ -15,7 +15,7 @@ Each file or directory has specific permissions for three categories of users: *
 * **`4`** (`4+0+0`) = `r--` -> Read only
 * **`0`** (`0+0+0`) = `---` -> No permissions
 
-*Example:* `chmod 754 script.sh` ---> User: `7` (`rwx`), Group: `5` (`r-x`), Others: `4` (`r--`).
+*Example:* `chmod 754 <file>` ---> User: `7` (`rwx`), Group: `5` (`r-x`), Others: `4` (`r--`).
 ### Common Permission Combinations
 755 (rwxr-xr-x) - Executable files and directories:
 - Owner can do anything
@@ -23,22 +23,27 @@ Each file or directory has specific permissions for three categories of users: *
 - Common for scripts and programs
 
 644 (rw-r--r--) - Regular files:
--Owner can read and write
--Group and others can only read
--Common for documents and configuration files
+- Owner can read and write
+- Group and others can only read
+- Common for documents and configuration files
 
 600 (rw-------) - Private files:
--Only owner can read and write
--Nobody else has any access
--Common for SSH keys and sensitive data
+- Only owner can read and write
+- Nobody else has any access
+- Common for SSH keys and sensitive data
 
 777 (rwxrwxrwx) - Full access for everyone:
--Everyone can do anything
--Generally considered insecure
--Avoid unless absolutely necessary
+- Everyone can do anything
+- Generally considered insecure
+- Avoid unless absolutely necessary
+## Changing Permissions (chmod)
+```bash
+chmod 755 <file>      # Set rwxr-xr-x
+chmod 600 <file>         # Set rw-------
+chmod u+x,g-w <file>   # Add execute for Owner, remove write for Group
+```
 
-
-##  User & Group Management
+## User & Group Management
 | Command | Description |
 | :--- | :--- |
 | **`sudo`** | Execute a command as another user |
@@ -47,14 +52,15 @@ Each file or directory has specific permissions for three categories of users: *
 | **`userdel`** | Delete a user account and related files |
 | **`usermod`** | Modify a user account |
 | **`addgroup`** | Add a group to the system |
+| **`delgroup`** | Remove a group from the system |
+| **`passwd`** | Change user password |
 
 ## Changing Ownership (chown and chgrp)
 
 ```bash
-sudo chown alice file.txt          # Change Owner to 'alice'
-sudo chown alice:devs file.txt     # Change Owner to 'alice' and Group to 'devs'
+sudo chown alice <file>         # Change Owner to 'alice'
+sudo chown alice:devs <file>     # Change Owner to 'alice' and Group to 'devs'
 sudo chown -R alice:devs /var/www/ # Recursive ownership change
 ```
 
-| **`delgroup`** | Remove a group from the system |
-| **`passwd`** | Change user password |
+
