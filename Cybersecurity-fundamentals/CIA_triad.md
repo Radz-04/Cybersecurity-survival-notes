@@ -13,7 +13,6 @@ Ensuring that sensitive information is accessible only to authorized users and p
   * Exposed private keys, API secrets, or configuration files.
   * Unauthorized access to restricted databases or internal documents.
 
----
 
 ## Integrity
 
@@ -26,7 +25,6 @@ Guaranteeing that data remains accurate, complete, and authentic, preventing una
   * Unauthorized modification of system files, audit logs, or database entries.
   * Malicious code injection altering application behavior or data output.
 
----
 
 ## Availability
 
