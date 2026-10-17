@@ -64,6 +64,7 @@ TCP Wrappers [Deprecated]:
   ```
 ## UFW (Modern Method - Recommended)
 * **Status & Controls:**
+  
   ```bash
   sudo ufw status verbose
   sudo ufw enable
