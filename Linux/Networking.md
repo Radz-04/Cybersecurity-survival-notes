@@ -58,10 +58,12 @@ TCP Wrappers [Deprecated]:
   ```
 * **`/etc/hosts.deny` (Blocked network services):**
 
- ```bash
+  ```bash
   ALL  : .example.com     # Block ALL network services from this domain
   sshd : 10.129.22.22     # Block SSH service for this specific IP
   ```
+
+ 
 ## UFW (Modern Method - Recommended)
 * **Status & Controls:**
   
