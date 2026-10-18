@@ -41,3 +41,14 @@
 | `dpkg` | `dpkg -i <file.deb>` | Install Debian software package directly. |
 | `systemctl` | `systemctl status <service>` | Manage and check state of systemd services/daemons. |
 | `crontab` | `crontab -e` / `crontab -l` | Edit or list scheduled background tasks (cron jobs). |
+
+
+## File Descriptors & Redirectors
+
+Linux manages standard input and output through three kernel file descriptors:
+
+- **0 (STDIN):** Standard Input (keyboard / data input)
+- **1 (STDOUT):** Standard Output (valid execution results)
+- **2 (STDERR):** Standard Error (error messages)
+
+
