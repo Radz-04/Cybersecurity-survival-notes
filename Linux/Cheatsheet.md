@@ -55,7 +55,7 @@ Linux manages standard input and output through three kernel file descriptors:
 
 - `2>/dev/null` - Suppresses error messages by sending STDERR to the null device:
   
-  ```bash
+```bash
   find /etc/ -name shadow 2>/dev/null
   ```
 
