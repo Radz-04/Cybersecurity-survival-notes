@@ -1,14 +1,11 @@
-# Cheatsheet
-## Essential Commands
-
-| Command | Usage  | Description |
+| Command | Usage | Description |
 | :--- | :--- | :--- |
 | `whoami` | `whoami` | Print effective username. |
 | `id` | `id` / `id <user>` | Print user and group IDs. |
 | `hostname` | `hostname` | Show or set system hostname. |
 | `uname` | `uname -a` | Print system and kernel information. |
 | `pwd` | `pwd` | Print current working directory. |
-| `ifconfig` | `ifconfig` / `ifconfig <iface>` | Display or configure network interfaces . |
+| `ifconfig` | `ifconfig` / `ifconfig <iface>` | Display or configure network interfaces. |
 | `ip` | `ip a` | Show or manage network devices and IP addresses. |
 | `netstat` | `netstat -tunlp` | Display active connections and listening ports. |
 | `ss` | `ss -tunlp` | Dump socket statistics (modern `netstat` replacement). |
@@ -27,70 +24,20 @@
 | `which` | `which <cmd>` | Print full path of executable binary. |
 | `find` | `find / -name <file> 2>/dev/null` | Search filesystem for files (suppress permission errors). |
 | `locate` | `locate <file>` | Find files by name using indexed database. |
+| `du` | `du -h -d 1 <dir>` | Identify file and directory space consumption (-a: all files, -c: total, --time: timestamp). |
+| `stat` | `stat <file>` | Display detailed status and metadata of a file or directory. |
 | `more` | `more <file>` | View file page-by-page (forward navigation only). |
 | `less` | `less <file>` | View file page-by-page (bidirectional scroll). |
 | `head` | `head <file>` | Output first 10 lines of file. |
 | `tail` | `tail <file>` | Output last 10 lines of file. |
 | `sort` | `sort <file>` | Sort lines of text files. |
 | `grep` | `grep "pattern" <file>` | Filter lines matching pattern (use -v to invert match). |
-| `tr` | `tr ":" " "` | Translate, squeeze, and/or delete characters from standard input, writing to standard output. |
+| `tr` | `tr ":" " "` | Translate, squeeze, and/or delete characters from standard input. |
 | `column` | `column -t` | Format input into aligned columns. |
 | `awk` | `awk '{print $1}' <file>` | Extract and process specific column fields. |
 | `ping` | `ping <ip>` | Test network reachability using ICMP ECHO. |
 | `traceroute` | `traceroute <ip>` | Trace packet route path to target host. |
-
-
-## File Descriptors & Redirectors
-
-Linux manages standard input and output through three kernel file descriptors:
-
-* `0` (**STDIN**): Standard Input (keyboard / data input)
-* `1` (**STDOUT**): Standard Output (valid execution results)
-* `2` (**STDERR**): Standard Error (error messages)
-
-### Redirection Operators & Pipes
-
-- `2>/dev/null` - Suppresses error messages by sending STDERR to the null device:
-  ```bash
-  find /etc/ -name shadow 2>/dev/null
-  ```
-
-- `>` - Redirects STDOUT to a file (overwrites existing file):
-
-```Bash
-find /etc/ -name shadow > results.txt
-```
-
-- `2>` - Redirects STDERR to a file:
-
-```Bash
-find /etc/ -name shadow 2> stderr.txt
-```
-
-- `1>` stdout.txt 2> stderr.txt - Separates STDOUT and STDERR into distinct files:
-
-```Bash
-find /etc/ -name shadow 1> stdout.txt 2> stderr.txt
-```
-- `<` - Passes file content as STDIN to a command:
-
-```Bash
-cat < stdout.txt
-```
-- `>>` - Appends STDOUT to a file without overwriting:
-
-```Bash
-find /etc/ -name passwd >> stdout.txt
-```
-- `<< EOF` - Sends a multi-line input stream to a command until the EOF delimiter is reached:
-
-```Bash
-cat << EOF > file.txt
-EQF
-```
-- `|` - Passes STDOUT of the first command directly as STDIN to the second command:
-
-```Bash
-find /etc/ -name *.conf | grep systemd
-```
-  
+| `apt` | `apt update && apt install <pkg>` | Package manager to update indices and install software. |
+| `dpkg` | `dpkg -i <file.deb>` | Install Debian software package directly. |
+| `systemctl` | `systemctl status <service>` | Manage and check state of systemd services/daemons. |
+| `crontab` | `crontab -e` / `crontab -l` | Edit or list scheduled background tasks (cron jobs). |
