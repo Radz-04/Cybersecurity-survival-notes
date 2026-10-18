@@ -11,8 +11,8 @@ Cybersecurity technical reference notes, commands, and cheatsheets.
 * 📄 **[Cheatsheet.md](./1-Linux/Cheatsheet.md):** Process management, systemd services, and system commands.
 * 📄 **[Networking.md](./1-Linux/Networking.md):** iproute2 suite, DNS configuration, SSH hardening,fail2ban, TCP Wrappers and UFW.
 
-### 📁 [Cybersecurity-fundamentals](./Cybersecurity-fundamentals/) [In Progress]
+### 📁 [Cybersecurity-fundamentals](./Cybersecurity-fundamentals/) 
 * 📄 **CIA_triad.md**: Cybersecurity Fundamentals
 
-### 📁 [Tools](./Tools/) [In Progress]
+### 📁 [Tools](./Tools/) 
 
