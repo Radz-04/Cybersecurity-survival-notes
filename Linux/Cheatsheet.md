@@ -47,9 +47,9 @@
 
 Linux manages standard input and output through three kernel file descriptors:
 
-- **0 (STDIN):** Standard Input (keyboard / data input)
-- **1 (STDOUT):** Standard Output (valid execution results)
-- **2 (STDERR):** Standard Error (error messages)
+* `0` (**STDIN**): Standard Input (keyboard / data input)
+* `1` (**STDOUT**): Standard Output (valid execution results)
+* `2` (**STDERR**): Standard Error (error messages)
 
 ### Redirection Operators & Pipes
 
@@ -97,5 +97,3 @@ EQF
 find /etc/ -name *.conf | grep systemd
 ```
   
-
-
