@@ -51,4 +51,51 @@ Linux manages standard input and output through three kernel file descriptors:
 - **1 (STDOUT):** Standard Output (valid execution results)
 - **2 (STDERR):** Standard Error (error messages)
 
+### Redirection Operators & Pipes
+
+- `2>/dev/null` - Suppresses error messages by sending STDERR to the null device:
+  ```bash
+  find /etc/ -name shadow 2>/dev/null
+  ```
+
+- `>` - Redirects STDOUT to a file (overwrites existing file):
+
+```Bash
+find /etc/ -name shadow > results.txt
+```
+
+- `2>` - Redirects STDERR to a file:
+
+```Bash
+find /etc/ -name shadow 2> stderr.txt
+```
+
+- `1>` stdout.txt 2> stderr.txt - Separates STDOUT and STDERR into distinct files:
+
+```Bash
+find /etc/ -name shadow 1> stdout.txt 2> stderr.txt
+```
+- `<` - Passes file content as STDIN to a command:
+
+```Bash
+cat < stdout.txt
+```
+- `>>` - Appends STDOUT to a file without overwriting:
+
+```Bash
+find /etc/ -name passwd >> stdout.txt
+```
+- `<< EOF` - Sends a multi-line input stream to a command until the EOF delimiter is reached:
+
+```Bash
+cat << EOF > file.txt
+EQF
+```
+- `|` - Passes STDOUT of the first command directly as STDIN to the second command:
+
+```Bash
+find /etc/ -name *.conf | grep systemd
+```
+  
+
 
