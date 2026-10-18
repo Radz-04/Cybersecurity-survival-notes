@@ -54,6 +54,7 @@ Linux manages standard input and output through three kernel file descriptors:
 ### Redirection Operators & Pipes
 
 - `2>/dev/null` - Suppresses error messages by sending STDERR to the null device:
+  
   ```bash
   find /etc/ -name shadow 2>/dev/null
   ```
