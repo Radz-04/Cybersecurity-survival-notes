@@ -90,7 +90,7 @@ find /etc/ -name passwd >> stdout.txt
 
 ```Bash
 cat << EOF > file.txt
-EQF
+EOF
 ```
 - `|` - Passes STDOUT of the first command directly as STDIN to the second command:
 
