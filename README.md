@@ -20,13 +20,14 @@ Cybersecurity technical reference notes, commands, and cheatsheets.
 
 ### 📁 [Linux](./Linux/)
 
-* 📄 **[Architecture.md](./1-Linux/Architecture.md):** Filesystem hierarchy and Linux system architecture.
-* 📄 **[Permissions.md](./1-Linux/Permissions.md):** File permissions, chmod, chown, SUID, SGID, Sticky Bit and umask.
-* 📄 **[Cheatsheet.md](./1-Linux/Cheatsheet.md):** Process management, systemd services, and system commands.
-* 📄 **[Networking.md](./1-Linux/Networking.md):** iproute2 suite, DNS configuration, SSH hardening,fail2ban, TCP Wrappers and UFW.
+* 📄 **[Architecture.md](./Linux/Architecture.md):** Filesystem hierarchy and Linux system architecture.
+* 📄 **[Permissions.md](./Linux/Permissions.md):** File permissions, chmod, chown, SUID, SGID, Sticky Bit and umask.
+* 📄 **[Cheatsheet.md](./Linux/Cheatsheet.md):** Process management, systemd services, and system commands.
+* 📄 **[Networking.md](./Linux/Networking.md):** iproute2 suite, DNS configuration, SSH hardening,fail2ban, TCP Wrappers and UFW.
 
 ### 📁 [Cybersecurity-fundamentals](./Cybersecurity-fundamentals/) 
 * 📄 **CIA_triad.md**: Cybersecurity Fundamentals
 
 ### 📁 [Tools](./Tools/) 
+📄 **[Nmap.md](./Tools/Nmap.md):** Network discovery, port scanning, service/OS detection, NSE scripting, and firewall/IDS evasion techniques.
 
