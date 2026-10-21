@@ -154,3 +154,66 @@ sudo nmap -sV --version-light -p 22,80,445 10.129.2.28
 # High-intensity version detection on all ports without exclusion
 sudo nmap -sV --version-all --allports -p- 10.129.2.28
 ```
+
+## OS Detection
+
+| Flag | Function |
+| :--- | :--- |
+| `-O` | Enable OS detection |
+| `--osscan-limit` | Limit OS detection to promising targets |
+| `--osscan-guess` / `--fuzzy` | Guess OS detection results |
+| `--max-os-tries <number>` | Set the maximum number of OS detection tries against a target |
+
+```bash
+# Standard OS detection
+sudo nmap -O 10.129.2.28
+
+# Limit OS detection to targets with at least one open and one closed TCP port
+sudo nmap -O --osscan-limit 10.129.2.28
+
+# Force aggressive OS guessing when match is not perfect
+sudo nmap -O --osscan-guess 10.129.2.28
+```
+
+## Nmap Scripting Engine (NSE)
+
+> The Nmap Scripting Engine (NSE) is one of Nmap's most powerful and flexible features. It allows users to write (and share) simple scripts (using the Lua programming language) to automate a wide variety of networking tasks.
+
+| Flag | Function |
+| :--- | :--- |
+| `-sC` | Performs a script scan using the default set of scripts. It is equivalent to `--script=default`. |
+| `--script <filename>\|<category>\|<directory>\|<expression>[,...]` | Runs a script scan using the comma-separated list of filenames, script categories, and directories. |
+| `--script-args <n1>=<v1>,<n2>={<n3>=<v3>}` | Lets you provide arguments to NSE scripts. |
+| `--script-args-file <filename>` | Lets you load arguments to NSE scripts from a file. |
+| `--script-help <filename>|<category>|<directory>\|<expression>|all[,...]` | Shows help about scripts. |
+| `--script-trace` | If this option is specified all incoming and outgoing communication performed by a script is printed. |
+| `--script-updatedb` | This option updates the script database found in `scripts/script.db`. |
+
+```bash
+# Loads all scripts whose name starts with http-
+nmap --script "http-*"
+
+# Loads every script except for those in the intrusive category.
+nmap --script "not intrusive"
+
+# Loads all scripts that are in the default category or the safe category or both.
+nmap --script "default or safe"
+
+# Loads those scripts that are in both the default and safe categories.
+nmap --script "default and safe"
+
+# Loads scripts in the default, safe, or intrusive categories, except for those whose names start with http-.
+nmap --script "(default or safe or intrusive) and not http-*"
+
+# A complex example of script arguments is
+nmap --script-args 'user=foo,pass=",{}=bar",whois={whodb=nofollow+ripe},xmpp-info.server_name=localhost'
+
+# For example if you want help about the ftp-anon script, you would run
+nmap --script-help ftp-anon
+
+# Preview of what scripts will be run for a specification, for example with
+nmap --script-help default
+
+# This option is generally used by itself:
+nmap --script-updatedb
+```
