@@ -15,10 +15,6 @@
 ╚══════╝╚══════╝ ╚═════╝ ╚════╝ ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝   
         ░▒▓█ S U R V I V A L   N O T E S █▓▒░                                                                       
 ```                                                                                                                             
-                                                                                                                             
-Cybersecurity technical reference notes, commands, and cheatsheets.
-
-##  Repository Index
 
 ### 📁 [Linux](./Linux/)
 
