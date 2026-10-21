@@ -255,3 +255,74 @@ sudo nmap -sU --defeat-icmp-ratelimit 10.129.2.28
 # Fine-tune probe timeouts for local network responsiveness
 sudo nmap --min-rtt-timeout 100ms --max-rtt-timeout 300ms 10.129.2.28
 ```
+
+## Firewall/IDS Evasion and Spoofing
+
+> Network obstructions such as firewalls can make mapping a network exceedingly difficult. Nmap offers many features to help understand these complex networks, and to verify that filters are working as intended. It even supports mechanisms for bypassing poorly implemented defenses.
+
+| Flag | Function |
+| :--- | :--- |
+| `-f` / `--mtu <number>` | fragment packets; using the specified MTU |
+| `-D <decoy1[,decoy2][,ME][,...]>` | Cloak a scan with decoys |
+| `-S <IP_Address>` | Spoof source address |
+| `-e <interface>` | Use specified interface |
+| `--source-port <portnumber>` / `-g <portnumber>` | Spoof source port number |
+| `--data <hex string>` | Append custom binary data to sent packets |
+| `--data-string <string>` | Append custom string to sent packets |
+| `--data-length <number>` | Append random data to sent packets |
+| `--ip-options <opts>` | Send packets with specified ip options |
+| `--ttl <value>` | Set IP time-to-live field |
+| `--randomize-hosts` | Randomize target host order |
+| `--spoof-mac <MAC address, prefix, or vendor name>` | Spoof MAC address |
+| `--proxies <Comma-separated list of proxy URLs>` | Relay TCP connections through a chain of proxies |
+| `--badsum` | Send packets with bogus TCP/UDP checksums |
+| `--adler32` | Use deprecated Adler32 instead of CRC32C for SCTP checksums |
+
+```bash
+# fragment packets; using the specified MTU
+sudo nmap -f 10.129.2.28
+sudo nmap -f -f 10.129.2.28
+sudo nmap --mtu 24 10.129.2.28
+
+# Cloak a scan with decoys
+sudo nmap -D 10.129.2.1,10.129.2.2,ME,RND:3 10.129.2.28
+
+# Spoof source address
+sudo nmap -S 10.129.2.50 -e eth0 -Pn 10.129.2.28
+
+# Spoof source port number
+sudo nmap --source-port 53 10.129.2.28
+sudo nmap -g 20 10.129.2.28
+
+# Append custom binary data to sent packets
+sudo nmap --data 0xdeadbeef 10.129.2.28
+
+# Append custom string to sent packets
+sudo nmap --data-string "Scan conducted by Security Ops, extension 7192" 10.129.2.28
+
+# Append random data to sent packets
+sudo nmap --data-length 25 10.129.2.28
+
+# Send packets with specified ip options
+sudo nmap --ip-options R 10.129.2.28
+
+# Set IP time-to-live field
+sudo nmap --ttl 64 10.129.2.28
+
+# Randomize target host order
+sudo nmap --randomize-hosts 10.129.2.0/24
+
+# Spoof MAC address
+sudo nmap --spoof-mac Apple 10.129.2.28
+sudo nmap --spoof-mac 0 10.129.2.28
+sudo nmap --spoof-mac 01:02:03:04:05:06 10.129.2.28
+
+# Relay TCP connections through a chain of proxies
+nmap -sV --proxies [http://10.129.2.1:8080](http://10.129.2.1:8080),socks4://10.129.2.2:1080 10.129.2.28
+
+# Send packets with bogus TCP/UDP checksums
+sudo nmap --badsum 10.129.2.28
+
+# Use deprecated Adler32 instead of CRC32C for SCTP checksums
+sudo nmap --adler32 10.129.2.28
+```
