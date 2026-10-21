@@ -183,9 +183,9 @@ sudo nmap -O --osscan-guess 10.129.2.28
 | :--- | :--- |
 | `-sC` | Performs a script scan using the default set of scripts. It is equivalent to `--script=default`. |
 | `--script <filename>\|<category>\|<directory>\|<expression>[,...]` | Runs a script scan using the comma-separated list of filenames, script categories, and directories. |
-| `--script-args <n1>=<v1>,<n2>={<n3>=<v3>},,n4={v4,v5}` | Lets you provide arguments to NSE scripts. |
+| `--script-args <n1>=<v1>,<n2>={<n3>=<v3>}` | Lets you provide arguments to NSE scripts. |
 | `--script-args-file <filename>` | Lets you load arguments to NSE scripts from a file. |
-| `--script-help <filename>\|<category>\|<directory>\|<expression>|all[,...]` | Shows help about scripts. |
+| `--script-help <filename>\|<category>\|<directory>\|<expression>\|all[,...]` | Shows help about scripts. |
 | `--script-trace` | If this option is specified all incoming and outgoing communication performed by a script is printed. |
 | `--script-updatedb` | This option updates the script database found in `scripts/script.db`. |
 
@@ -213,7 +213,7 @@ nmap --script-help ftp-anon
 
 # Preview of what scripts will be run for a specification, for example with
 nmap --script-help default
+```
 
 # This option is generally used by itself:
 nmap --script-updatedb
-```
