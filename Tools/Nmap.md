@@ -1,5 +1,4 @@
 # Nmap
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Survival_Notes-red?style=flat-square)
 [![Nmap](https://img.shields.io/badge/Tool-Nmap-blue?style=flat-square)](https://nmap.org)
 > Official Manual: `man nmap` | [nmap.org](https://nmap.org)
 
@@ -217,4 +216,42 @@ nmap --script-help default
 
 # This option is generally used by itself:
 nmap --script-updatedb
+```
+
+## Timing and Performance
+
+> Official Manual: `man nmap` | [nmap.org/book/man-performance.html](https://nmap.org/book/man-performance.html)
+
+| Flag | Function |
+| :--- | :--- |
+| `-T<0-5>` \| `-T<template>` | Set a timing template (`paranoid` 0, `sneaky` 1, `polite` 2, `normal` 3, `aggressive` 4, `insane` 5) |
+| `--min-hostgroup` / `--max-hostgroup <num>` | Adjust parallel scan group sizes |
+| `--min-parallelism` / `--max-parallelism <num>` | Adjust probe parallelization |
+| `--min-rtt-timeout` / `--max-rtt-timeout` / `--initial-rtt-timeout <time>` | Adjust probe timeouts (e.g. `100ms`, `1s`) |
+| `--max-retries <num>` | Specify maximum number of port scan probe retransmissions |
+| `--host-timeout <time>` | Give up on slow target hosts |
+| `--script-timeout <time>` | Set a ceiling on script execution time |
+| `--scan-delay` / `--max-scan-delay <time>` | Adjust minimum or maximum delay between probes |
+| `--min-rate` / `--max-rate <number>` | Directly control the scanning rate in packets per second |
+| `--defeat-rst-ratelimit` | Ignore RST rate limits to speed up SYN scans |
+| `--defeat-icmp-ratelimit` | Ignore ICMP rate limits to speed up UDP scans |
+
+```bash
+# Aggressive scan template for modern/fast networks
+sudo nmap -T4 10.129.2.28
+
+# Force a minimum packet rate (packets per second) for rapid enumeration
+sudo nmap --min-rate 5000 10.129.2.28
+
+# Limit retransmissions and give up on slow hosts after 15 minutes
+sudo nmap --max-retries 2 --host-timeout 15m 10.129.2.28
+
+# Ignore RST rate limits for fast TCP SYN open-port discovery
+sudo nmap -sS --defeat-rst-ratelimit -p- 10.129.2.28
+
+# Ignore ICMP rate limits to accelerate UDP scans
+sudo nmap -sU --defeat-icmp-ratelimit 10.129.2.28
+
+# Fine-tune probe timeouts for local network responsiveness
+sudo nmap --min-rtt-timeout 100ms --max-rtt-timeout 300ms 10.129.2.28
 ```
