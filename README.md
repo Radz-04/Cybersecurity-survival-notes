@@ -29,5 +29,5 @@ Cybersecurity technical reference notes, commands, and cheatsheets.
 * 📄 **CIA_triad.md**: Cybersecurity Fundamentals
 
 ### 📁 [Tools](./Tools/) 
-📄 **[Nmap.md](./Tools/Nmap.md):** Network discovery, port scanning, service/OS detection, NSE scripting, and firewall/IDS evasion techniques.
+* 📄 **[Nmap.md](./Tools/Nmap.md):** Network discovery, port scanning, service/OS detection, NSE scripting, and firewall/IDS evasion techniques.
 
