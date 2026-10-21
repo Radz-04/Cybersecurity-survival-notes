@@ -213,7 +213,7 @@ nmap --script-help ftp-anon
 
 # Preview of what scripts will be run for a specification, for example with
 nmap --script-help default
-```
 
 # This option is generally used by itself:
 nmap --script-updatedb
+```
