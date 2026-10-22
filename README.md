@@ -1,5 +1,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/Radz-04/Cybersecurity-survival-notes?style=flat-square&color=yellow)](https://github.com/Radz-04/Cybersecurity-survival-notes/stargazers)
 [![License](https://img.shields.io/github/license/Radz-04/Cybersecurity-survival-notes?style=flat-square&color=orange)](https://github.com/Radz-04/Cybersecurity-survival-notes/blob/main/LICENSE)
+![License](https://img.shields.io/github/license/Radz-04/Cybersecurity-survival-notes?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/Radz-04/Cybersecurity-survival-notes?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/Radz-04/Cybersecurity-survival-notes?style=flat-square)
 ```text
  ██████╗██╗   ██╗██████╗ ███████╗██████╗ 
 ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗
