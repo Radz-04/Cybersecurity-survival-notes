@@ -27,7 +27,7 @@
 * 📄 **[Networking.md](./Linux/Networking.md):** iproute2 suite, DNS configuration, SSH hardening,fail2ban, TCP Wrappers and UFW.
 
 ### 📁 [Cybersecurity-fundamentals](./Cybersecurity-fundamentals/) 
-* 📄 **[CIA_Triad.md](./Li/Architecture.md)**: ybersecurity Fundamentals
+* 📄 **[CIA_triad.md](./Cybersecurity-fundamentals/CIA_triad.md)**: Cybersecurity Fundamentals
 
 ### 📁 [Tools](./Tools/) 
 * 📄 **[Nmap.md](./Tools/Nmap.md):** Network discovery, port scanning, service/OS detection, NSE scripting, and firewall/IDS evasion techniques.
