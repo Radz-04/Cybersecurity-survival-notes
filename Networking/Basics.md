@@ -84,8 +84,78 @@ Examples of network topologies include star, bus, ring, mesh, and tree.
 
 A LAN or WAN can use different topologies depending on its design and requirements.
 
-## Sources
+## Network Models
 
+OSI and TCP/IP divide network communication into layers. Each layer describes a set of functions, which helps when following a packet or narrowing down a connection problem.
+
+### OSI
+
+The **Open Systems Interconnection (OSI)** reference model has seven layers. It is standardized in ISO/IEC 7498-1 and ITU-T X.200.
+
+| Layer | Name | What it describes |
+| --- | --- | --- |
+| 7 | Application | Communication services used by application processes. |
+| 6 | Presentation | How exchanged data is represented, including formatting and encoding. |
+| 5 | Session | The organization and synchronization of dialogue between applications. |
+| 4 | Transport | End-to-end data transfer services for the upper layers. |
+| 3 | Network | Addressing, routing, and transfer across networks. |
+| 2 | Data Link | Transfer of frames over a network link. |
+| 1 | Physical | Transmission of bits through a physical medium. |
+
+Ethernet switching is commonly associated with Layer 2, IP routing with Layer 3, and TCP and UDP with Layer 4. These associations are useful when describing a problem, but the OSI model is a reference model rather than a specification for a particular network implementation.
+
+### TCP/IP
+
+The Internet protocol suite is commonly described using four layers:
+
+| Layer | Role | Examples |
+| --- | --- | --- |
+| Application | Communication functions used by applications. | HTTP, DNS, SMTP, SSH |
+| Transport | Communication between application processes. | TCP, UDP |
+| Internet | IP addressing and packet forwarding across networks. | IPv4, IPv6, ICMP |
+| Link / Network Access | Communication over the local network technology. | Ethernet, Wi-Fi |
+
+TCP/IP does not use separate layers for every function described by OSI. A common comparison is:
+
+| OSI | TCP/IP |
+| --- | --- |
+| Application, Presentation, Session | Application |
+| Transport | Transport |
+| Network | Internet |
+| Data Link, Physical | Link / Network Access |
+
+This is an approximate comparison. Real protocols do not always fit neatly into one OSI layer.
+
+### Encapsulation
+
+As data moves down a protocol stack, protocols add the information needed to carry it. This is **encapsulation**.
+
+For an HTTP/1.1 exchange using TCP, IP, and Ethernet:
+
+1. HTTP produces the application data.
+2. TCP carries that data in segments with TCP headers.
+3. IP carries the segments in IP packets.
+4. Ethernet carries the packets in frames.
+5. The frames are transmitted as signals over the medium.
+
+At the receiving host, the stack processes the encapsulated data in the opposite direction. This is **decapsulation**.
+
+The names used in this example are:
+
+| Layer | Data unit |
+| --- | --- |
+| Application | Data |
+| Transport | TCP segment or UDP datagram |
+| Internet | IP packet / IP datagram |
+| Data Link | Frame |
+| Physical | Bits, represented by signals during transmission |
+
+## References
+
+- [ISO/IEC 7498-1 — OSI Basic Reference Model](https://www.iso.org/standard/20269.html)
+- [ITU-T X.200 — OSI Basic Reference Model](https://www.itu.int/rec/T-REC-X.200-199407-I/en)
+- [RFC 1122 — Requirements for Internet Hosts: Communication Layers](https://www.rfc-editor.org/rfc/rfc1122.html)
+- [Cloudflare — OSI model](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)
 - [IBM — What Is Computer Networking?](https://www.ibm.com/think/topics/networking)
 - [Cisco — What Is a LAN?](https://www.cisco.com/site/us/en/learn/topics/networking/what-is-a-lan-local-area-network.html)
 - [Cisco — What Is a WAN?](https://www.cisco.com/site/us/en/learn/topics/networking/what-is-a-wan-wide-area-network.html)
