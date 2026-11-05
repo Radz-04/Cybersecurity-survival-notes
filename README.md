@@ -32,3 +32,9 @@
 ### 📁 [Tools](./Tools/) 
 * 📄 **[Nmap.md](./Tools/Nmap.md):** Network discovery, port scanning, service/OS detection, NSE scripting, and firewall/IDS evasion techniques.
 
+### 📁 [Networking](./Networking/)
+
+* 📄 **[Basics.md](./Networking/Basics.md):** Networking fundamentals, LANs, WANs, OSI, TCP/IP, and encapsulation.
+* 📄 **[Components.md](./Networking/Components.md):** Hosts, interfaces, network devices, firewalls, and servers.
+* 📄 **[Transmission.md](./Networking/Transmission.md):** Signals, transmission media, and duplex modes.
+* 📄 **[Protocols.md](./Networking/Protocols.md):** Common protocols, service ports, and how they work together.
