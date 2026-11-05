@@ -21,20 +21,20 @@
 
 ### 📁 [Linux](./Linux/)
 
-* 📄 **[Architecture.md](./Linux/Architecture.md):** Filesystem hierarchy and Linux system architecture.
-* 📄 **[Permissions.md](./Linux/Permissions.md):** File permissions, chmod, chown, SUID, SGID, Sticky Bit and umask.
-* 📄 **[Cheatsheet.md](./Linux/Cheatsheet.md):** Process management, systemd services, and system commands.
-* 📄 **[Networking.md](./Linux/Networking.md):** iproute2 suite, DNS configuration, SSH hardening,fail2ban, TCP Wrappers and UFW.
+*  **[Architecture.md](./Linux/Architecture.md):** Filesystem hierarchy and Linux system architecture.
+*  **[Permissions.md](./Linux/Permissions.md):** File permissions, chmod, chown, SUID, SGID, Sticky Bit and umask.
+*  **[Cheatsheet.md](./Linux/Cheatsheet.md):** Process management, systemd services, and system commands.
+*  **[Networking.md](./Linux/Networking.md):** iproute2 suite, DNS configuration, SSH hardening,fail2ban, TCP Wrappers and UFW.
 
 ### 📁 [Cybersecurity-fundamentals](./Cybersecurity-fundamentals/) 
-* 📄 **[CIA_triad.md](./Cybersecurity-fundamentals/CIA_triad.md)**: Cybersecurity Fundamentals
+*  **[CIA_triad.md](./Cybersecurity-fundamentals/CIA_triad.md)**: Cybersecurity Fundamentals
 
 ### 📁 [Tools](./Tools/) 
-* 📄 **[Nmap.md](./Tools/Nmap.md):** Network discovery, port scanning, service/OS detection, NSE scripting, and firewall/IDS evasion techniques.
+*  **[Nmap.md](./Tools/Nmap.md):** Network discovery, port scanning, service/OS detection, NSE scripting, and firewall/IDS evasion techniques.
 
 ### 📁 [Networking](./Networking/)
 
-* 📄 **[Basics.md](./Networking/Basics.md):** Networking fundamentals, LANs, WANs, OSI, TCP/IP, and encapsulation.
-* 📄 **[Components.md](./Networking/Components.md):** Hosts, interfaces, network devices, firewalls, and servers.
-* 📄 **[Transmission.md](./Networking/Transmission.md):** Signals, transmission media, and duplex modes.
-* 📄 **[Protocols.md](./Networking/Protocols.md):** Common protocols, service ports, and how they work together.
+*  **[Basics.md](./Networking/Basics.md):** Networking fundamentals, LANs, WANs, OSI, TCP/IP, and encapsulation.
+*  **[Components.md](./Networking/Components.md):** Hosts, interfaces, network devices, firewalls, and servers.
+*  **[Transmission.md](./Networking/Transmission.md):** Signals, transmission media, and duplex modes.
+*  **[Protocols.md](./Networking/Protocols.md):** Common protocols, service ports, and how they work together.
