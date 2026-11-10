@@ -38,3 +38,4 @@
 *  **[Transmission.md](./Networking/Transmission.md):** Signals, transmission media, and duplex modes.
 *  **[Protocols.md](./Networking/Protocols.md):** Common protocols, service ports, and how they work together.
 *  **[DHCP.md](./Networking/DHCP.md):** Automatic IP configuration, DORA process, DHCP leases, and relay agents.
+* **[Communication.md](./Networking/Communication.md):** MAC and IP addressing, ports, ARP, and communication across networks.
