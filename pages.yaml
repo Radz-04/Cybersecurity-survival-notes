@@ -1,0 +1,56 @@
+
+name: Publish Cybersecurity Notes Website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site-code.zip'
+      - 'Linux/**'
+      - 'Networking/**'
+      - 'Tools/**'
+      - 'Cybersecurity-fundamentals/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract website files
+        run: unzip -o site-code.zip -d .
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r website/requirements.txt
+
+      - name: Generate HTML pages
+        run: python website/build.py
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '_site'
+
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
