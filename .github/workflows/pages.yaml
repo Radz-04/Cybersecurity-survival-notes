@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Extract website files
-        run: unzip -o site-code.zip -d .
+        run: unzip -o .github/site-code.zip -d .
 
       - name: Set up Python
         uses: actions/setup-python@v5
