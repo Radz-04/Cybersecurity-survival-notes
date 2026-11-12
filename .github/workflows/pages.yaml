@@ -10,7 +10,7 @@ on:
       - 'Networking/**'
       - 'Tools/**'
       - 'Cybersecurity-fundamentals/**'
-      - '.github/workflows/pages.yml'
+      - '.github/workflows/pages.yaml'
       - 'Penetration-Testing/**'
   workflow_dispatch:
 
