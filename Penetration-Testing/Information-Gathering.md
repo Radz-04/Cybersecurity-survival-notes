@@ -1,4 +1,4 @@
-# Penetration Testing — Part 1: Information Gathering
+# Information Gathering
 
 Passive and active reconnaissance, DNS, web technologies, and network services.
 
