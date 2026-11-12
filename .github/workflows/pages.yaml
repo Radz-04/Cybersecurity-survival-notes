@@ -11,6 +11,7 @@ on:
       - 'Tools/**'
       - 'Cybersecurity-fundamentals/**'
       - '.github/workflows/pages.yml'
+      - 'Penetration-Testing/**'
   workflow_dispatch:
 
 permissions:
