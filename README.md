@@ -43,3 +43,6 @@
 *  **[Protocols.md](./Networking/Protocols.md):** Common protocols, service ports, and how they work together.
 *  **[DHCP.md](./Networking/DHCP.md):** Automatic IP configuration, DORA process, DHCP leases, and relay agents.
 * **[Communication.md](./Networking/Communication.md):** MAC and IP addressing, ports, ARP, and communication across networks.
+
+### 📁 [Penetration Testing](./Penetration-Testing/)
+* **[Information Gathering](./Penetration-Testing/Information-Gathering.md):** Reconnaissance methodology, OSINT, DNS enumeration, subdomain discovery, web fingerprinting, and network scanning.
