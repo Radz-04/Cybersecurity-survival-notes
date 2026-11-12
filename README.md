@@ -18,6 +18,10 @@
         ░▒▓█ S U R V I V A L   N O T E S █▓▒░                                                                       
 ```                                                                                                                             
 
+🌐 **[Website](https://radz-04.github.io/Cybersecurity-survival-notes/)**
+
+💬 **[Discussions](https://github.com/Radz-04/Cybersecurity-survival-notes/discussions)**
+
 ### 📁 [Linux](./Linux/)
 
 *  **[Architecture.md](./Linux/Architecture.md):** Filesystem hierarchy and Linux system architecture.
