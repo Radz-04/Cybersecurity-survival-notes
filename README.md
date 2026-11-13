@@ -17,6 +17,9 @@
 ╚══════╝╚══════╝ ╚═════╝ ╚════╝ ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝   
         ░▒▓█ S U R V I V A L   N O T E S █▓▒░                                                                       
 ```                                                                                                                             
+An open-source collection of cybersecurity study notes covering Linux, networking, security fundamentals, Nmap, and penetration testing.
+
+Technical explanations, command examples, and reference material for students and hands-on learners.
 
 🌐 **[Website](https://radz-04.github.io/Cybersecurity-survival-notes/)**
 
