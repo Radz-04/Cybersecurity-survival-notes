@@ -95,6 +95,6 @@ EOF
 - `|` - Passes STDOUT of the first command directly as STDIN to the second command:
 
 ```Bash
-find /etc/ -name *.conf | grep systemd
+find /etc/ -name '*.conf' | grep systemd
 ```
   
