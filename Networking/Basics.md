@@ -246,12 +246,12 @@ The names used in this example are:
 | Data Link | Frame |
 | Physical | Bits, represented by signals during transmission |
 
+
 ## References
 
-- [ISO/IEC 7498-1 — OSI Basic Reference Model](https://www.iso.org/standard/20269.html)
-- [ITU-T X.200 — OSI Basic Reference Model](https://www.itu.int/rec/T-REC-X.200-199407-I/en)
-- [RFC 1122 — Requirements for Internet Hosts: Communication Layers](https://www.rfc-editor.org/rfc/rfc1122.html)
-- [Cloudflare — OSI model](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)
 - [IBM — What Is Computer Networking?](https://www.ibm.com/think/topics/networking)
-- [Cisco — What Is a LAN?](https://www.cisco.com/site/us/en/learn/topics/networking/what-is-a-lan-local-area-network.html)
-- [Cisco — What Is a WAN?](https://www.cisco.com/site/us/en/learn/topics/networking/what-is-a-wan-wide-area-network.html)
+- [ITU-T X.200 — OSI Basic Reference Model](https://www.itu.int/rec/T-REC-X.200-199407-I/en)
+- [RFC 1122 — Requirements for Internet Hosts](https://www.rfc-editor.org/rfc/rfc1122.html)
+- [Cisco — VPN Types](https://docs.manage.security.cisco.com/cdfmc/c_vpn-types.html)
+- [NIST SP 800-113 — Guide to SSL VPNs](https://csrc.nist.gov/pubs/sp/800/113/final)
+- [ATIS — Global Area Network (GAN)](https://glossary.atis.org/glossary/global-area-network-gan/)
