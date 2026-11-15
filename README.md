@@ -49,3 +49,24 @@ Technical explanations, command examples, and reference material for students an
 
 ### 📁 [Penetration Testing](./Penetration-Testing/)
 * **[Information Gathering](./Penetration-Testing/Information-Gathering.md):** Reconnaissance methodology, OSINT, DNS enumeration, subdomain discovery, web fingerprinting, and network scanning.
+
+
+## About the Project
+
+Cybersecurity Survival Notes is an open-source project created and maintained by [Radzivon Ferrigni Dioguardi](https://github.com/Radz-04).
+
+I regularly update the repository as I continue studying cybersecurity, adding new material, improving existing explanations, and correcting mistakes.
+
+## Contributing
+
+Contributions are welcome!
+
+If you find an error, have a clearer explanation, or want to share a useful example, feel free to open an issue or submit a pull request.
+
+All contributions are reviewed before being merged to help keep the documentation accurate and useful.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+You are free to use, modify, and share the material under the terms of the license, including retaining the original copyright and license notice.
