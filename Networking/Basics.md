@@ -58,6 +58,50 @@ A company with offices in Rome and Milan could use a WAN connection to allow bot
 
 The Internet is a global interconnection of networks and is a familiar example of wide-area connectivity.
 
+
+### Wireless Local Area Network (WLAN)
+
+A **Wireless Local Area Network (WLAN)** is a local network that connects devices through wireless communication instead of requiring a physical cable for each connection.
+
+Wi-Fi networks are the most common example of WLANs. They typically use wireless access points to connect devices to a local network.
+
+**Example:**
+
+A laptop and a smartphone connect to a home router using Wi-Fi, while a desktop computer connects through Ethernet. All three devices may be part of the same LAN.
+
+**Important:** WLAN describes the wireless part of a local network. A WLAN does not necessarily provide Internet access, and wireless clients may be isolated from other local devices depending on the network configuration.
+
+### Metropolitan Area Network (MAN)
+
+A **Metropolitan Area Network (MAN)** provides connectivity across a city or metropolitan region.
+
+It can connect multiple buildings, campuses, or local networks using infrastructure such as fiber-optic links.
+
+**Example:**
+
+A university connects buildings located in different parts of the same city through a metropolitan network.
+
+### Personal Area Network (PAN / WPAN)
+
+A **Personal Area Network (PAN)** connects devices within a person's immediate surroundings.
+
+A **Wireless Personal Area Network (WPAN)** uses wireless communication for this purpose. Bluetooth is one technology used for short-range connections between personal devices.
+
+**Example:**
+
+A smartphone connected to a smartwatch through Bluetooth is an example of a short-range personal wireless connection.
+
+PANs typically cover a much smaller area than LANs.
+
+### Global Area Network (GAN)
+
+A **Global Area Network (GAN)** interconnects networks across a geographically unrestricted area.
+
+The Internet is an example of global networking, although the term WAN is more commonly used in everyday networking discussions.
+
+GAN is mainly useful as a geographical classification rather than as a description of a specific networking technology.
+
+
 ### How LANs and WANs Work Together
 
 A LAN provides connectivity within a local environment, while a WAN allows communication with networks beyond that environment.
