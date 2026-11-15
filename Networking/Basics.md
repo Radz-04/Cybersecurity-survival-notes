@@ -128,6 +128,58 @@ Examples of network topologies include star, bus, ring, mesh, and tree.
 
 A LAN or WAN can use different topologies depending on its design and requirements.
 
+
+## Virtual Private Networks (VPNs)
+
+A **Virtual Private Network (VPN)** provides a logical connection over an existing network, allowing users or networks to communicate through a protected tunnel.
+
+VPNs are commonly used for remote access, communication between offices, and access to private network resources.
+
+Unlike LAN, MAN, or WAN, VPN does not describe the geographical size of a network.
+
+### Site-to-Site VPN
+
+A **site-to-site VPN** connects two or more networks through VPN gateways, commonly routers or firewalls.
+
+It allows devices at different locations to communicate through a protected connection without requiring each device to establish its own VPN session.
+
+**Example:**
+
+A company connects its offices in Rome and Milan using a site-to-site VPN over the Internet.
+
+The offices can exchange traffic between their internal networks while keeping their existing IP subnets.
+
+### Remote Access VPN
+
+A **remote access VPN** allows an individual device to connect securely to a remote network.
+
+After establishing the connection, the device can access resources permitted by the VPN configuration and access-control policies.
+
+**Example:**
+
+A security student connects to an authorized training lab through OpenVPN. The VPN client creates a virtual network interface, and the operating system uses routing rules to reach the lab network.
+
+### Split Tunneling and Full Tunneling
+
+VPN configurations determine which traffic is sent through the tunnel.
+
+- **Split tunneling:** only traffic for specified destinations uses the VPN. Other traffic follows the device's normal network connection.
+- **Full tunneling:** the client's general network traffic is routed through the VPN gateway.
+
+**Example:**
+
+With split tunneling, a student can access a remote lab through the VPN while ordinary Internet traffic continues to use the local connection.
+
+### SSL/TLS VPN
+
+An **SSL/TLS VPN** uses TLS-based secure communication to provide remote access to applications or networks.
+
+Depending on the implementation, access may be provided through a web portal or through a VPN client that establishes a tunnel.
+
+The term **SSL VPN** is still widely used, although modern implementations generally rely on TLS rather than the obsolete SSL protocols.
+
+**Important:** Remote access and site-to-site describe VPN deployment models. SSL/TLS and IPsec describe technologies used to protect VPN communication.
+
 ## Network Models
 
 OSI and TCP/IP divide network communication into layers. Each layer describes a set of functions, which helps when following a packet or narrowing down a connection problem.
