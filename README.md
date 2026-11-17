@@ -49,7 +49,7 @@ Technical explanations, command examples, and reference material for students an
 
 ### 📁 [Penetration Testing](./Penetration-Testing/)
 * **[Information Gathering](./Penetration-Testing/Information-Gathering.md):** Reconnaissance methodology, OSINT, DNS enumeration, subdomain discovery, web fingerprinting, and network scanning.
-* **[Footprinting and Scanning](./Penetration-Testing/Footprinting-and-Scanning-formato-Information-Gathering.md):** Network mapping, TCP/IP fundamentals, host discovery, TCP/UDP port scanning, service and OS detection, NSE, firewall and IDS/IPS analysis, scan optimization, and result interpretation.
+* **[Footprinting and Scanning](./Penetration-Testing/Footprinting-and-Scanning.md):** Network mapping, TCP/IP fundamentals, host discovery, TCP/UDP port scanning, service and OS detection, NSE, firewall and IDS/IPS analysis, scan optimization, and result interpretation.
 
 ## About the Project
 
