@@ -51,6 +51,9 @@ Technical explanations, command examples, and reference material for students an
 * **[Information Gathering](./Penetration-Testing/Information-Gathering.md):** Reconnaissance methodology, OSINT, DNS enumeration, subdomain discovery, web fingerprinting, and network scanning.
 * **[Footprinting and Scanning](./Penetration-Testing/Footprinting-and-Scanning.md):** Network mapping, TCP/IP fundamentals, host discovery, TCP/UDP port scanning, service and OS detection, NSE, firewall and IDS/IPS analysis, scan optimization, and result interpretation.
 
+### 📁 [Labs and Machines](./Lab-and-Machine/)
+* **[Letter — TryHackMe](./Lab-and-Machine/Letter-THM.md)** — An OSINT investigation using a damaged letter and historical records to find a postal code, name, and age.
+
 ## About the Project
 
 Cybersecurity Survival Notes is an open-source project created and maintained by [Radzivon Ferrigni Dioguardi](https://github.com/Radz-04).
