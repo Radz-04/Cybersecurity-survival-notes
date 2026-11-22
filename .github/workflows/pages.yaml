@@ -12,6 +12,7 @@ on:
       - 'Cybersecurity-fundamentals/**'
       - '.github/workflows/pages.yaml'
       - 'Penetration-Testing/**'
+      - 'Lab-and-Machine/**'
   workflow_dispatch:
 
 permissions:
